@@ -35,6 +35,9 @@ const NativeSelect = styled.select`
   width: 100%;
   height: 100%;
   opacity: 0;
+
+  /* In Safari, <select> tags have a default height, one which can't be overridden with the height property. */
+  appearance: none;
 `
 
 const PresentationalBit = styled.div`
